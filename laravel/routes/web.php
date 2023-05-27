@@ -18,8 +18,5 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/', function(){
-    return view('songs.index');
-});
 Route::resource('songs',SongController::class);
 
